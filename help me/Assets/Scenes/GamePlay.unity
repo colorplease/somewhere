@@ -5508,7 +5508,7 @@ MonoBehaviour:
   changeNumber: 0
   paused: 0
   notBadAtGame: 0
-  lives: 999
+  lives: 99
   tutorial: 0
   radioMouth: {fileID: 859086048}
   loopType: 0
@@ -5557,7 +5557,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.219
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

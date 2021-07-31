@@ -309,7 +309,7 @@ public class RhythmGameMapper : MonoBehaviour
         {
             if (!tutorial)
             {
-            musicSource.clip = song2;
+            musicSource.clip = song3;
             songLength = musicSource.clip.length;
 
             }
@@ -356,7 +356,7 @@ public class RhythmGameMapper : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         musicSource.Play();
         paused = false;
-        //mappingCode.backingTrack2();
+        mappingCode.backingTrack2();
         no = true;
     }
 
@@ -731,6 +731,10 @@ public class RhythmGameMapper : MonoBehaviour
 
                     }
                 }
+                else
+                {
+                    mappingCode.backingTrack2();
+                }
 
             }
 
@@ -842,32 +846,7 @@ public class RhythmGameMapper : MonoBehaviour
 
             }
        
-            Debug.Log(killmeplease);
-            if (killmeplease == 0)
-            {
-                musicSource.PlayOneShot(song1, 1f);
-                sceneChange = false;
-            }
-
-             if (killmeplease == 1)
-            {
-                musicSource.PlayOneShot(song2, 1f);
-                sceneChange = false;
-            }
-
-             if (killmeplease == 2)
-            {
-                musicSource.PlayOneShot(song3, 1f);
-                sceneChange = false;
-                killmeplease = 0;
-            }
-
-             if (killmeplease == 3)
-            {
-                musicSource.PlayOneShot(song1, 1f);
-                sceneChange = false;
-                killmeplease = 0;
-            }
+          
 
       
            
