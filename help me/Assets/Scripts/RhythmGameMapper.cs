@@ -335,7 +335,7 @@ public class RhythmGameMapper : MonoBehaviour
         }
         StartMusic();
         paused = true;
-        killmeplease = 2;
+        killmeplease = 0;
         no = false;
 
 
@@ -356,7 +356,7 @@ public class RhythmGameMapper : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         musicSource.Play();
         paused = false;
-        //mappingCode.backingTrack1();
+        mappingCode.backingTrack2();
         no = true;
     }
 
